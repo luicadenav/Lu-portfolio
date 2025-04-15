@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  --main-pink: #ac19d4;
+  --dark-blue-border: #344675;
+  --dark-blue-two: #171941;
+  --dark-blue: #2b3553;
+  --blue-border: #1d8cf8;
+  --light-blue: #5dcdea;
+  --dark-purple-two: #51215e;
+  --white: #fff;
+  --green-neon: #00f2c3;
+  --orange-neon: #ff8d72;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: poppins;
+  background-color: black;
+}
