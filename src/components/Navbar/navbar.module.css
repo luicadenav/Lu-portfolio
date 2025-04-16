@@ -2,7 +2,7 @@
   background-color: var(--main-pink);
   display: flex;
   align-items: center;
-  position: relative; /* Necesario para contener la lista */
+  position: relative;
   height: 80px;
   justify-content: space-between;
   padding: 0 34px;
