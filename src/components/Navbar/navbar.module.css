@@ -1,5 +1,5 @@
 .navbarContainer {
-  background-color: var(--main-pink);
+  background-color: var(--main-black);
   display: flex;
   align-items: center;
   position: relative;
@@ -18,7 +18,7 @@
   padding: 0;
   display: flex;
   flex: 1;
-  background-color: var(--main-pink);
+  background-color: var(--main-black);
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
