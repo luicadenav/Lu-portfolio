@@ -1,9 +1,10 @@
-import styles from "./hero.module.css";
+import Carousel from "../Carousel/Carousel";
+import styles from "./about.module.css";
 
 function About() {
   return (
     <section className={styles.heroContainer}>
-      <h3 className={styles.subtitle}>About me</h3>
+      <Carousel />
     </section>
   );
 }
