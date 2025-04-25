@@ -5,29 +5,27 @@
 }
 
 #root {
-  --main-pink: #ac19d4;
-  --main-black: #000;
-  --dark-blue-two: #171941;
-  --dark-blue: #2b3553;
-  --blue-border: #1d8cf8;
-  --light-blue: #5dcdea;
-  --dark-purple-two: #51215e;
-  --white: #fff;
-  --green-neon: #00f2c3;
-  --orange-neon: #ff8d72;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #9a9a9a;
+  --color-surface: #121212;
+  --color-border: #1e1e1e;
+  --color-accent: #00f2d6;
+  --font-display: 40px;
+  --font-h1: 32px;
+  --font-h2: 24px;
+  --font-h3: 20px;
+  --font-subtitle: 18px;
+  --font-body: 16px;
+  --font-caption: 14px;
+  --font-overline: 12px;
+
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Fira Sans", sans-serif;
 }
 
 body {
   box-sizing: border-box;
-  font-family: poppins;
+  font-family: "Montserrat", sans-serif;
   background-color: #000;
-
-  /* --s: 59px; 
-  --c1: #121212;
-  --c2: #000000;
-
-  --_g: #0000 90deg, var(--c1) 0;
-  background: conic-gradient(from 90deg at 2px 2px, var(--_g)),
-    conic-gradient(from 90deg at 1px 1px, var(--_g)), var(--c2);
-  background-size: var(--s) var(--s), calc(var(--s) / 5) calc(var(--s) / 5); */
 }

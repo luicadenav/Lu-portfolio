@@ -1,5 +1,5 @@
 .navbarContainer {
-  background-color: var(--main-black);
+  background-color: var(--color-black);
   display: flex;
   align-items: center;
   position: relative;
@@ -18,12 +18,12 @@
   padding: 0;
   display: flex;
   flex: 1;
-  background-color: var(--main-black);
+  background-color: var(--color-black);
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   list-style: none;
-  color: white;
+  color: var(--color-white);
   transition: 0.3s ease all;
   transform: translate(-100%);
 }
@@ -36,7 +36,7 @@
 .navLink a {
   display: block;
   padding: 8px;
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   text-transform: uppercase;
 }

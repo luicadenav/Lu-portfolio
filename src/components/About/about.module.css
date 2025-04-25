@@ -1,0 +1,34 @@
+.textContainer {
+  padding: 34px;
+}
+.subtitle {
+  color: var(--color-white);
+  font-size: var(--font-h2);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 34px;
+}
+
+.accent {
+  color: var(--color-accent);
+}
+
+.info {
+  font-family: var(--font-secondary);
+  color: var(--color-white);
+  font-size: (--);
+  letter-spacing: 0.5px;
+}
+.imageContainer {
+  flex: 1;
+  max-width: 700px;
+  display: flex;
+  justify-content: right;
+  margin-bottom: 34px;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+}

@@ -1,18 +1,18 @@
-import styles from './hero.module.css';
-import heroImage from '../../assets/hero_image.png';
-import download from '../../assets/download_icon.svg';
-import whatsapp from '../../assets/whatsapp_icon.svg';
+import styles from "./hero.module.css";
+import heroImage from "../../assets/images/hero_mobile.webp";
+import download from "../../assets/icons/download.svg";
+import chat from "../../assets/icons/chat.svg";
 
 function Hero() {
   return (
     <section className={styles.heroContainer}>
       <div className={styles.titleContainer}>
-        <h2 className={styles.subtitle}>hello, i&apos;m</h2>
+        <h2 className={styles.subtitleHead}>here we meet.</h2>
         <h1 className={styles.title}>luisa cadena</h1>
         <h2 className={styles.subtitle}>front-end developer</h2>
         <div className={styles.buttonsContainer}>
           <a className={styles.sharedButton} href="">
-            <img className={styles.whatsappIcon} src={whatsapp} alt="" />
+            <img className={styles.whatsappIcon} src={chat} alt="" />
             <span>let's talk</span>
           </a>
           <a className={styles.sharedButton} href="">

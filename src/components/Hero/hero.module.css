@@ -7,22 +7,30 @@
 
 .titleContainer {
   flex: 1;
-  margin-top: 80px;
+  margin-top: 40px;
   padding: 34px;
+  text-transform: uppercase;
 }
 
+.subtitleHead,
 .subtitle {
-  color: var(--light-blue);
-  font-size: 1.5rem;
-  text-transform: capitalize;
-  font-weight: 400;
+  color: var(--color-accent);
+  font-size: var(--font-h3);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.subtitleHead {
+  font-weight: 200;
+  font-size: var(--font-subtitle);
 }
 
 .title {
-  color: var(--white);
-  font-size: 2.8rem;
-  text-transform: capitalize;
+  color: var(--color-white);
+  font-size: var(--font-display);
+  text-transform: uppercase;
   margin: 12px 0;
+  font-weight: 700;
 }
 
 .imageContainer {
@@ -43,7 +51,6 @@
   justify-content: left;
   gap: 0.5rem;
   margin-top: 24px;
-  margin-bottom: 80px;
 }
 
 .sharedButton {
@@ -54,11 +61,11 @@
   padding: 0.5rem 1.25rem;
   width: fit-content;
   min-width: 156px;
-  border-radius: 9999px;
+  border-radius: 8px;
   text-decoration: none;
   text-decoration: none;
-  border: 1px solid var(--white);
-  color: var(--white);
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
 }
 
 .downloadIcon,

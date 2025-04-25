@@ -5,14 +5,19 @@
   margin: 50px auto;
   padding: 34px;
   gap: 24px;
+  background-color: var(--color-surface);
 }
 
 .subtitle {
-  color: var(--white);
-  font-size: 1.75rem;
-  text-transform: capitalize;
+  color: var(--color-white);
+  font-size: var(--font-h2);
+  text-transform: uppercase;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
+}
+
+.accent {
+  color: var(--color-accent);
 }
 
 .imageContainer {
