@@ -2,6 +2,7 @@ import styles from "./hero.module.css";
 import heroImage from "../../assets/images/hero_mobile.webp";
 import download from "../../assets/icons/download.svg";
 import chat from "../../assets/icons/chat.svg";
+import AnimatedText from "./AnimatedText/AnimatedText";
 
 function Hero() {
   return (
@@ -9,7 +10,7 @@ function Hero() {
       <div className={styles.titleContainer}>
         <h2 className={styles.subtitleHead}>here we meet.</h2>
         <h1 className={styles.title}>luisa cadena</h1>
-        <h2 className={styles.subtitle}>front-end developer</h2>
+        <AnimatedText />
         <div className={styles.buttonsContainer}>
           <a className={styles.sharedButton} href="">
             <img className={styles.whatsappIcon} src={chat} alt="" />

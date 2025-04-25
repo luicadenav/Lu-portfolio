@@ -1,0 +1,12 @@
+.textContainer {
+  margin-top: 16px;
+}
+.subtitle {
+  color: var(--color-accent);
+  font-size: var(--font-h3);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
+  margin: 0;
+  line-height: 0;
+}
