@@ -17,7 +17,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-tooltip": "^5.28.1",
-    "split-text-js": "^1.0.3"
+    "split-text-js": "^1.0.3",
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

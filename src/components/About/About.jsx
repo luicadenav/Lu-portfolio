@@ -1,6 +1,6 @@
-import Carousel from "../Carousel/Carousel";
 import styles from "./about.module.css";
 import devImage from "../../assets/images/women.jpeg";
+import Slider from "./SkillsSlider/SkillsSlider";
 function About() {
   return (
     <section className={styles.aboutContainer}>
@@ -18,8 +18,7 @@ function About() {
       <div className={styles.imageContainer}>
         <img src={devImage} alt="hero Image" />
       </div>
-
-      <Carousel />
+      <Slider />
     </section>
   );
 }
