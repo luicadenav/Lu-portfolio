@@ -20,17 +20,47 @@
   color: var(--color-accent);
 }
 
-.imageContainer {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 10px;
-  overflow: hidden;
+.galleryContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  position: relative;
 }
 
-.imageContainer img {
+.imageWrapper {
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.galleryImage {
   width: 100%;
   height: auto;
-  object-fit: cover;
   display: block;
+}
+
+.activeImage {
+  position: fixed;
+  z-index: 20;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vh;
+  height: 100vh;
+}
+
+.activeImage img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.details {
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
 }
