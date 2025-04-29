@@ -1,7 +1,7 @@
 import styles from "./hero.module.css";
-import heroImage from "../../assets/images/hero_mobile.webp";
-import download from "../../assets/icons/download.svg";
-import chat from "../../assets/icons/chat.svg";
+import heroImage from "@/assets/images/hero_mobile.webp";
+import download from "@/assets/icons/download.svg";
+import chat from "@/assets/icons/chat.svg";
 import AnimatedText from "./AnimatedText/AnimatedText";
 
 function Hero() {

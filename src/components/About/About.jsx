@@ -1,5 +1,5 @@
 import styles from "./about.module.css";
-import devImage from "../../assets/images/women.jpeg";
+import devImage from "@/assets/images/women.jpeg";
 import Slider from "./SkillsSlider/SkillsSlider";
 function About() {
   return (
@@ -19,6 +19,7 @@ function About() {
         <img src={devImage} alt="hero Image" />
       </div>
       <Slider />
+      <p className={styles.subtitleSlider}> &lt;what i code with/&gt;</p>
     </section>
   );
 }

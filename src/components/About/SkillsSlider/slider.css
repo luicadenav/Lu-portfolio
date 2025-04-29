@@ -1,11 +1,10 @@
 .sliderContainer {
   width: 100%;
   display: flex;
-  padding: 34px;
+  padding: 0 34px 16px;
   margin: 0 auto;
-  margin-bottom: 40px;
+
   max-width: 1440px;
-  height: 400px;
 }
 
 .swiper {

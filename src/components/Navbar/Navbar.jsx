@@ -1,7 +1,7 @@
-import logo from '../../assets/Lu_lodo.svg';
-import styles from './navbar.module.css';
-import BurgerMenu from './BurgerMenu/BurgerMenu';
-import { useState } from 'react';
+import logo from "@/assets/Lu_lodo.svg";
+import styles from "./navbar.module.css";
+import BurgerMenu from "./BurgerMenu/BurgerMenu";
+import { useState } from "react";
 
 function Navbar() {
   const [isActive, setIsActive] = useState(false);
@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className={styles.navbarContainer}>
       <img className={styles.logo} src={logo} alt="personal logo" />
-      <ul className={`${styles.navList} ${isActive ? styles.isActive : ''}`}>
+      <ul className={`${styles.navList} ${isActive ? styles.isActive : ""}`}>
         <li className={styles.navLink}>
           <a href="">home</a>
         </li>

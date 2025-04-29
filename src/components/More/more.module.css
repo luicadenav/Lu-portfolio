@@ -1,0 +1,26 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  padding: 34px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: var(--color-white);
+  font-size: var(--font-h2);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 34px;
+}
+
+.info {
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+  margin-bottom: 24px;
+}
+
+.accent {
+  color: var(--color-accent);
+}

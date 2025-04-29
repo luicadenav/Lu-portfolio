@@ -5,18 +5,18 @@ import "swiper/css/autoplay";
 import "swiper/css";
 import "./slider.css";
 
-import img1 from "../../../assets/icons/image_1.svg";
-import img2 from "../../../assets/icons/image_2.svg";
-import img3 from "../../../assets/icons/image_3.svg";
-import img4 from "../../../assets/icons/image_4.svg";
-import img5 from "../../../assets/icons/image_5.svg";
-import img6 from "../../../assets/icons/image_6.svg";
-import img7 from "../../../assets/icons/image_7.svg";
-import img8 from "../../../assets/icons/image_8.svg";
-import img9 from "../../../assets/icons/image_9.svg";
-import img10 from "../../../assets/icons/image_10.svg";
+import img1 from "@/assets/icons/image_1.svg";
+import img2 from "@/assets/icons/image_2.svg";
+import img3 from "@/assets/icons/image_3.svg";
+import img4 from "@/assets/icons/image_4.svg";
+import img5 from "@/assets/icons/image_5.svg";
+import img6 from "@/assets/icons/image_6.svg";
+import img7 from "@/assets/icons/image_7.svg";
+import img8 from "@/assets/icons/image_8.svg";
+import img9 from "@/assets/icons/image_9.svg";
+import img10 from "@/assets/icons/image_10.svg";
 
-const images = [
+const skillsIcons = [
   { src: img1, name: "Expo" },
   { src: img2, name: "Git" },
   { src: img3, name: "JavaScript" },
@@ -79,7 +79,7 @@ export default function Slider() {
           },
         }}
       >
-        {images.map((slide, index) => (
+        {skillsIcons.map((slide, index) => (
           <SwiperSlide
             key={index + "slide"}
             data-tooltip-id={`tooltip-${index}`}
@@ -91,7 +91,7 @@ export default function Slider() {
         ))}
       </Swiper>
 
-      {images.map((item, index) => (
+      {skillsIcons.map((item, index) => (
         <ReactTooltip
           key={`tooltip-${index}`}
           id={`tooltip-${index}`}

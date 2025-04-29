@@ -1,7 +1,7 @@
 import styles from "./collaborative.module.css";
-import uwvc from "../../assets/images/flag_us.webp";
-import ezvisa from "../../assets/images/passport.webp";
-import plaza from "../../assets/images/workers.webp";
+import uwvc from "@/assets/images/flag_us.webp";
+import ezvisa from "@/assets/images/passport.webp";
+import plaza from "@/assets/images/workers.webp";
 function Collaborative() {
   return (
     <section className={styles.sectionContainer}>
