@@ -95,7 +95,7 @@ export default function Slider() {
         <ReactTooltip
           key={`tooltip-${index}`}
           id={`tooltip-${index}`}
-          place="bottom"
+          place="top"
           content={item.name}
           openOnClick
         />

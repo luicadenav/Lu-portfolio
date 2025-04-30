@@ -69,75 +69,77 @@ function Collaborative() {
     },
   ];
   return (
-    <section className={styles.sectionContainer}>
-      <h3 className={styles.subtitle}>
-        To <span className={styles.accent}>c</span>oncept to cl
-        <span className={styles.accent}>i</span>ent
-      </h3>
-      <div className={styles.galleryContainer} ref={containerRef}>
-        {projects.map((project) => (
-          <div
-            key={project.src}
-            className={styles.imageWrapper}
-            onClick={(e) => handleOpen(e, project)}
-          >
-            <img src={project.src} alt="" className={styles.galleryImage} />
-            <p></p>
-          </div>
-        ))}
-
-        <AnimatePresence>
-          {activeProject && rect && (
-            <motion.div
-              className={styles.activeImage}
-              initial={{
-                top: rect.top,
-                left: rect.left,
-                width: rect.width,
-                height: rect.height,
-              }}
-              animate={{
-                top: 0,
-                left: 0,
-                width: "100vw",
-                height: "100vh",
-              }}
-              exit={{
-                top: rect.top,
-                left: rect.left,
-                width: rect.width,
-                height: rect.height,
-              }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
+    <section className={styles.sectionBackground}>
+      <div className={styles.infoContainer}>
+        <h3 className={styles.subtitle}>
+          To <span className={styles.accent}>c</span>oncept to cl
+          <span className={styles.accent}>i</span>ent
+        </h3>
+        <div className={styles.galleryContainer} ref={containerRef}>
+          {projects.map((project) => (
+            <div
+              key={project.src}
+              className={styles.imageWrapper}
+              onClick={(e) => handleOpen(e, project)}
             >
-              <img src={activeProject.src} alt={activeProject.name} />
-            </motion.div>
-          )}
-        </AnimatePresence>
+              <img src={project.src} alt="" className={styles.galleryImage} />
+              <p></p>
+            </div>
+          ))}
 
-        <AnimatePresence>
-          {activeProject && rect && (
-            <motion.div
-              className={styles.details}
-              initial={{ x: "-100%", opacity: 0 }}
-              animate={{
-                x: 0,
-                opacity: 1,
-                transition: { delay: 0.2, duration: 0.5 },
-              }}
-              exit={{
-                x: "-100%",
-                opacity: 0,
-                transition: { duration: 0.3, delay: 0 },
-              }}
-            >
-              <DetailsModal
-                handleClose={handleClose}
-                projectInfo={activeProject}
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
+          <AnimatePresence>
+            {activeProject && rect && (
+              <motion.div
+                className={styles.activeImage}
+                initial={{
+                  top: rect.top,
+                  left: rect.left,
+                  width: rect.width,
+                  height: rect.height,
+                }}
+                animate={{
+                  top: 0,
+                  left: 0,
+                  width: "100vw",
+                  height: "100vh",
+                }}
+                exit={{
+                  top: rect.top,
+                  left: rect.left,
+                  width: rect.width,
+                  height: rect.height,
+                }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+              >
+                <img src={activeProject.src} alt={activeProject.name} />
+              </motion.div>
+            )}
+          </AnimatePresence>
+
+          <AnimatePresence>
+            {activeProject && rect && (
+              <motion.div
+                className={styles.details}
+                initial={{ x: "-100%", opacity: 0 }}
+                animate={{
+                  x: 0,
+                  opacity: 1,
+                  transition: { delay: 0.2, duration: 0.5 },
+                }}
+                exit={{
+                  x: "-100%",
+                  opacity: 0,
+                  transition: { duration: 0.3, delay: 0 },
+                }}
+              >
+                <DetailsModal
+                  handleClose={handleClose}
+                  projectInfo={activeProject}
+                />
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
       </div>
     </section>
   );

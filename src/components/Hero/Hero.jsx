@@ -1,13 +1,12 @@
 import styles from "./hero.module.css";
-import heroImage from "@/assets/images/hero_mobile.webp";
 import download from "@/assets/icons/download.svg";
 import chat from "@/assets/icons/chat.svg";
 import AnimatedText from "./AnimatedText/AnimatedText";
 
 function Hero() {
   return (
-    <section className={styles.heroContainer}>
-      <div className={styles.titleContainer}>
+    <section className={styles.heroSection}>
+      <div className={styles.infoContainer}>
         <h2 className={styles.subtitleHead}>here we meet.</h2>
         <h1 className={styles.title}>luisa cadena</h1>
         <AnimatedText />
@@ -21,10 +20,6 @@ function Hero() {
             Resume
           </a>
         </div>
-      </div>
-
-      <div className={styles.imageContainer}>
-        <img src={heroImage} alt="hero Image" />
       </div>
     </section>
   );

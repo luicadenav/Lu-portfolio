@@ -1,11 +1,12 @@
-.sectionContainer {
-  display: flex;
-  flex-direction: column;
-  max-width: 1440px;
-  margin: 50px auto;
-  padding: 34px;
-  gap: 24px;
-  background-color: var(--color-surface);
+.sectionBackground {
+  width: 100%;
+}
+
+.infoContainer {
+  max-width: 1280px;
+  width: 100%;
+  padding: 5rem 1rem;
+  margin: 0 auto;
 }
 
 .subtitle {
@@ -14,6 +15,8 @@
   text-transform: uppercase;
   font-weight: 600;
   text-align: left;
+  display: block;
+  margin-bottom: 2rem;
 }
 
 .accent {
@@ -21,13 +24,17 @@
 }
 
 .galleryContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
+  width: 100%;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin: 0 auto;
 }
 
 .imageWrapper {
+  flex: 1;
+  max-height: 260px;
   cursor: pointer;
   overflow: hidden;
   border-radius: 8px;
@@ -35,7 +42,8 @@
 
 .galleryImage {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 
@@ -63,4 +71,18 @@
   top: 0;
   left: 0;
   z-index: 50;
+}
+
+@media (min-width: 768px) {
+  .infoContainer {
+    padding: 8rem 2rem;
+  }
+
+  .galleryContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .imageWrapper {
+    max-height: 300px;
+  }
 }

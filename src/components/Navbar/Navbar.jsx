@@ -11,26 +11,28 @@ function Navbar() {
   };
 
   return (
-    <nav className={styles.navbarContainer}>
-      <img className={styles.logo} src={logo} alt="personal logo" />
-      <ul className={`${styles.navList} ${isActive ? styles.isActive : ""}`}>
-        <li className={styles.navLink}>
-          <a href="">home</a>
-        </li>
-        <li className={styles.navLink}>
-          <a href="">about me</a>
-        </li>
-        <li className={styles.navLink}>
-          <a href="">clients</a>
-        </li>
-        <li className={styles.navLink}>
-          <a href="">projects</a>
-        </li>
-        <li className={styles.navLink}>
-          <a href="">contact</a>
-        </li>
-      </ul>
-      <BurgerMenu toggleMenu={toggleMenu} isActive={isActive} />
+    <nav className={styles.navbarSection}>
+      <div className={styles.navbarContainer}>
+        <img className={styles.logo} src={logo} alt="personal logo" />
+        <ul className={`${styles.navList} ${isActive ? styles.isActive : ""}`}>
+          <li className={styles.navLink}>
+            <a href="">home</a>
+          </li>
+          <li className={styles.navLink}>
+            <a href="">about me</a>
+          </li>
+          <li className={styles.navLink}>
+            <a href="">clients</a>
+          </li>
+          <li className={styles.navLink}>
+            <a href="">projects</a>
+          </li>
+          <li className={styles.navLink}>
+            <a href="">contact</a>
+          </li>
+        </ul>
+        <BurgerMenu toggleMenu={toggleMenu} isActive={isActive} />
+      </div>
     </nav>
   );
 }
