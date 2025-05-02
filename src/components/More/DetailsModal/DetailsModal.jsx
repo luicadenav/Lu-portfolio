@@ -6,7 +6,7 @@ function DetailsModal({ handleClose, projectInfo }) {
 
   const highlightMap = {
     theme0: ["i", "a", "d"],
-    theme1: ["e", "r"],
+    theme1: ["p"],
     theme2: ["i", "e", "m"],
     theme3: ["u", "n"],
   };

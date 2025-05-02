@@ -17,7 +17,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  object-position: 80%;
+  object-position: 85%;
 }
 
 .gridItem3 {
@@ -89,6 +89,7 @@
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
   }
+
   .theme0.activeImage::after,
   .theme1.activeImage::after,
   .theme3.activeImage::after {
@@ -96,7 +97,6 @@
     background-color: transparent;
   }
 
-  .theme1.activeImage::after,
   .theme2.activeImage::after {
     content: "";
     position: absolute;

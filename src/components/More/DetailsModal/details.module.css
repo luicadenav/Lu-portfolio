@@ -15,9 +15,12 @@
 }
 
 .logoContainer {
-  width: 150px;
   height: 100px;
+  width: fit-content;
+  max-width: 260px;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .logoContainer img {
@@ -63,6 +66,11 @@
   color: #6fff00;
 }
 
+.theme1 .subtitle,
+.theme1 .accent {
+  color: #ffaf2a;
+}
+
 .theme0 .accent,
 .theme0 .subtitle,
 .theme3 .subtitle,
@@ -77,8 +85,7 @@
   }
 
   .logoContainer {
-    width: 200px;
-    height: 150px;
+    height: 120px;
     margin-bottom: 1rem;
   }
 

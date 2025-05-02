@@ -1,7 +1,7 @@
-import img2 from "@/assets/images/project_0.webp";
 import deepImg from "@/assets/images/deep.webp";
 import mortysImg from "@/assets/images/mortys.webp";
 import excaliburImg from "@/assets/images/excalibur.webp";
+import paypotImg from "@/assets/images/paypot.png";
 import mui from "@/assets/icons/image_4.svg";
 import next from "@/assets/icons/image_5.svg";
 import react from "@/assets/icons/image_7.svg";
@@ -12,6 +12,7 @@ import firebase from "@/assets/icons/image_11.svg";
 import logoExcalibur from "@/assets/images/logo_excalibur.webp";
 import logoStore from "@/assets/images/logo_store.svg";
 import logoDeep from "@/assets/images/logo_deep.svg";
+import logoPaypot from "@/assets/images/logo_paypot.svg";
 
 export const projects = [
   {
@@ -34,9 +35,9 @@ export const projects = [
   },
   {
     id: 1,
-    src: img2,
-    logo: logoStore,
-    name: "projec 1",
+    src: paypotImg,
+    logo: logoPaypot,
+    name: "paypot",
     description: "Descripción del proyecto 1...",
     stack: [
       { name: "react", src: react },
