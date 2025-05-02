@@ -3,9 +3,9 @@ import styles from "./collaborative.module.css";
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import DetailsModal from "./DetailsModal/DetailsModal";
-import uwvc from "@/assets/images/flag_us.webp";
-import ezvisa from "@/assets/images/passport.webp";
-import plaza from "@/assets/images/workers.webp";
+import uwvc from "@/assets/images/flag_B.png";
+import ezvisa from "@/assets/images/passport_B.png";
+import plaza from "@/assets/images/workers_B.png";
 import img1 from "@/assets/icons/image_1.svg";
 import img2 from "@/assets/icons/image_2.svg";
 import img3 from "@/assets/icons/image_3.svg";
@@ -83,7 +83,6 @@ function Collaborative() {
               onClick={(e) => handleOpen(e, project)}
             >
               <img src={project.src} alt="" className={styles.galleryImage} />
-              <p></p>
             </div>
           ))}
 

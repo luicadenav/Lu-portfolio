@@ -1,6 +1,7 @@
 .aboutContainer {
   width: 100%;
   background-color: var(--color-surface);
+  margin-top: 7rem;
 }
 
 .wrapperInfo {
