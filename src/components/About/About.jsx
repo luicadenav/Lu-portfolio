@@ -1,7 +1,10 @@
+import { useHover } from "../../customHooks/useHover";
 import styles from "./about.module.css";
 import SkillsGallery from "./SkillsGallery/SkillsGallery";
 
 function About() {
+  const [hoveredId, hoverProps] = useHover();
+
   return (
     <section className={styles.aboutContainer}>
       <div className={styles.infoContainer}>
@@ -17,18 +20,18 @@ function About() {
           </p>
         </div>
         <div className={styles.skillsWrapper}>
-          <SkillsGallery />
+          <SkillsGallery hoveredId={hoveredId} />
           <div className={styles.subtitlesWrapper}>
-            <h3 className={styles.subtitleInfo}>
+            <h3 {...hoverProps(0)} className={styles.subtitleInfo}>
               mo<span className={styles.accent}>B</span>ile
             </h3>
-            <h3 className={styles.subtitleInfo}>
+            <h3 {...hoverProps(1)} className={styles.subtitleInfo}>
               back<span className={styles.accent}>e</span>nd
             </h3>
-            <h3 className={styles.subtitleInfo}>
+            <h3 {...hoverProps(2)} className={styles.subtitleInfo}>
               web de<span className={styles.accent}>s</span>ign
             </h3>
-            <h3 className={styles.subtitleInfo}>
+            <h3 {...hoverProps(3)} className={styles.subtitleInfo}>
               fron<span className={styles.accent}>t</span>end
             </h3>
           </div>

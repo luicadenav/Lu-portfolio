@@ -25,47 +25,58 @@ const skillsIcons = [
   { src: img10, name: "Figma" },
 ];
 
-export default function SkillsGallery() {
+export default function SkillsGallery({ hoveredId }) {
+  const highlightMap = {
+    0: [0, 1, 7],
+    1: [2, 5, 9],
+    2: [3, 8, 10],
+    3: [9, 7, 2, 4],
+  };
+
+  const extendedIcons = [
+    ...skillsIcons.slice(0, 6),
+    "TEXT_PLACEHOLDER",
+    ...skillsIcons.slice(6),
+  ];
+
   return (
     <section className={styles.Container}>
       <div className={styles.skillsContainer}>
-        {skillsIcons.slice(0, 6).map((slide, index) => (
-          <div
-            key={index + "slide"}
-            data-tooltip-id={`tooltip-${index}`}
-            className={`${styles.skillItem} ${styles[`gridItem${index}`]}`}
-          >
-            <div className={styles.imgContainer}>
-              <img src={slide.src} alt={`Logo de ${slide.name}`} />
-            </div>
-          </div>
-        ))}
+        {extendedIcons.map((slide, index) => {
+          const isHighlighted = highlightMap[hoveredId]?.includes(index);
+          if (slide == "TEXT_PLACEHOLDER") {
+            return (
+              <p className={`${styles.skillItem} ${styles.gridItem6}`}>
+                &lt; what i <span className={styles.accent}> code </span>
+                with / &gt;
+              </p>
+            );
+          }
 
-        <p className={`${styles.skillItem} ${styles.gridItem6}`}>
-          &lt; what i <span className={styles.accent}> code </span>
-          with / &gt;
-        </p>
-
-        {skillsIcons.slice(6).map((slide, index) => (
-          <div
-            key={index + "slide"}
-            data-tooltip-id={`tooltip-${index}`}
-            className={`${styles.skillItem} ${styles[`gridItem${index + 7}`]}`}
-          >
-            <div className={styles.imgContainer}>
-              <img src={slide.src} alt={`Logo de ${slide.name}`} />
+          return (
+            <div
+              key={index + "slide"}
+              data-tooltip-id={`tooltip-${index}`}
+              className={`${styles.skillItem} ${styles[`gridItem${index}`]}`}
+            >
+              <div className={styles.imgContainer}>
+                <img
+                  className={isHighlighted ? styles.highlighted : ""}
+                  src={slide.src}
+                  alt={`Logo de ${slide.name}`}
+                />
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
 
-      {skillsIcons.map((item, index) => (
+      {extendedIcons.map((item, index) => (
         <ReactTooltip
           key={`tooltip-${index}`}
           id={`tooltip-${index}`}
           place="top"
           content={item.name}
-          openOnClick
         />
       ))}
     </section>

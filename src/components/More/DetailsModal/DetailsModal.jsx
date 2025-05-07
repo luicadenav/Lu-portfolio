@@ -5,17 +5,16 @@ function DetailsModal({ handleClose, projectInfo }) {
   const themeClass = projectThemes[projectInfo.id] || "";
 
   const highlightMap = {
-    theme0: ["i", "a", "d"],
-    theme1: ["p"],
-    theme2: ["i", "e", "m"],
-    theme3: ["u", "n"],
+    theme0: [2, 7, 11],
+    theme1: [0, 3],
+    theme2: [3, 5, 8],
+    theme3: [2, 16],
   };
 
   function highlightText(text, theme) {
     const highlightChars = highlightMap[theme] || [];
-
     return [...text].map((char, i) =>
-      highlightChars.includes(char.toLowerCase()) ? (
+      highlightChars.includes(i) ? (
         <span key={i} className={styles.accent}>
           {char}
         </span>
