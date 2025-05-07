@@ -1,0 +1,117 @@
+.imageContainer {
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: 85%;
+  transition: transform 0.3s ease;
+}
+
+.imageContainer:hover img {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 50;
+  padding: 2px;
+  gap: 1rem;
+}
+
+.imageContainer:hover .overlay {
+  opacity: 1;
+}
+
+.titleProject {
+  color: var(--color-white);
+  font-size: var(--font-h3);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: left;
+  text-align: center;
+}
+
+.button {
+  background-color: transparent;
+
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid var(--color-white);
+  border-style: dashed;
+  font-size: var(--font-overline);
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: border 0.3s linear;
+  position: relative;
+  overflow: hidden;
+  color: var(--color-white);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  z-index: -1;
+  transition: bottom 0.3s ease;
+}
+
+.button:hover::before {
+  bottom: 0;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: var(---color-black);
+  border: 1px transparent solid;
+}
+
+.gridItem3 {
+  grid-column: 1 / span 2;
+}
+
+.gridItem4 {
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 2;
+}
+
+@media (min-width: 768px) {
+  .gridItem1 {
+    grid-column: 3 / span 1;
+  }
+
+  .gridItem2 {
+    grid-column: 4 / span 1;
+  }
+
+  .gridItem3 {
+    grid-column: 3 / span 2;
+  }
+
+  .gridItem4 {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+}
