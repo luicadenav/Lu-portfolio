@@ -13,7 +13,7 @@ function Gallery() {
   const themeClass = projectThemes[activeProject?.id] || "";
 
   const handleOpen = (e, project) => {
-    const bounds = e.currentTarget.getBoundingClientRect();
+    const bounds = e.currentTarget.parentNode.getBoundingClientRect();
     setRect(bounds);
     setActiveProject(project);
 
@@ -40,11 +40,19 @@ function Gallery() {
             className={`${styles.imageContainer} ${
               styles[`gridItem${index + 1}`]
             } `}
-            onClick={(e) => {
-              handleOpen(e, project);
-            }}
           >
             <img src={project.src} />
+            <div className={styles.overlay}>
+              <p className={styles.titleProject}>{project.name}</p>
+              <button
+                className={styles.button}
+                onClick={(e) => {
+                  handleOpen(e, project);
+                }}
+              >
+                View project
+              </button>
+            </div>
           </div>
         );
       })}
