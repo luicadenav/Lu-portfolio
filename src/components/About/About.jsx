@@ -6,7 +6,7 @@ function About() {
   const [hoveredId, hoverProps] = useHover();
 
   return (
-    <section className={styles.aboutContainer}>
+    <section id="about" className={styles.aboutContainer}>
       <div className={styles.infoContainer}>
         <div className={styles.textContainer}>
           <h3 className={styles.subtitle}>

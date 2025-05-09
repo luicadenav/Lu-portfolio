@@ -5,7 +5,7 @@ import AnimatedText from "./AnimatedText/AnimatedText";
 
 function Hero() {
   return (
-    <section className={styles.heroSection}>
+    <section id="hero" className={styles.heroSection}>
       <div className={styles.infoContainer}>
         <h2 className={styles.subtitleHead}>here we meet.</h2>
         <h1 className={styles.title}>luisa cadena</h1>

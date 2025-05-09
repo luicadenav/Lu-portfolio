@@ -3,7 +3,7 @@ import styles from "./more.module.css";
 
 function More() {
   return (
-    <section className={styles.sectionContainer}>
+    <section id="projects" className={styles.sectionContainer}>
       <div className={styles.infoContainer}>
         <h3 className={styles.subtitle}>
           <span className={styles.accent}>e</span>xplore mo

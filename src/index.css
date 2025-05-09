@@ -25,6 +25,10 @@
   --font-secondary: "Fira Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
