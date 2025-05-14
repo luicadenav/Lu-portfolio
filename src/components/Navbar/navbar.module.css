@@ -2,7 +2,7 @@
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 30;
   background-color: var(--color-black);
 }
 
@@ -17,7 +17,7 @@
 
 .navList {
   position: absolute;
-  top: 80px;
+  top: 76px;
   width: 100%;
   height: calc(100vh - 78px);
   left: 0;
