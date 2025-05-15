@@ -16,7 +16,6 @@ function Gallery() {
     setRect(bounds);
     setActiveProject(project);
     const scrollPosition = window.pageYOffset;
-    console.log("🚀 ~ handleOpen ~ scrollPosition:", scrollPosition);
     document.body.classList.add("body-no-scroll");
     document.body.style.top = `${scrollPosition}px`;
   };
@@ -24,7 +23,6 @@ function Gallery() {
   const handleClose = () => {
     setActiveProject(null);
     const scrollPosition = document.body.style.top.replace("px", "");
-    console.log("🚀 ~ handleClose ~ scrollPosition:", scrollPosition);
     document.body.classList.remove("body-no-scroll");
     document.body.style.top = "";
     window.scrollTo(0, parseInt(scrollPosition, 10));

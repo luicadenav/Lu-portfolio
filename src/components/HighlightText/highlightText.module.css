@@ -1,0 +1,16 @@
+.title {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.theme2 .accent {
+  color: #6fff00;
+}
+
+.theme1 .accent {
+  color: #ffaf2a;
+}
+
+.theme3 .accent {
+  color: var(--color-complement);
+}

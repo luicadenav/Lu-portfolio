@@ -12,11 +12,15 @@ function Hero() {
         <AnimatedText />
         <div className={styles.buttonsContainer}>
           <a className={styles.sharedButton} href="">
-            <img className={styles.whatsappIcon} src={chat} alt="" />
+            <img className={styles.whatsappIcon} src={chat} alt="icon chat" />
             <span>let's talk</span>
           </a>
           <a className={styles.sharedButton} href="">
-            <img className={styles.downloadIcon} src={download} alt="" />
+            <img
+              className={styles.downloadIcon}
+              src={download}
+              alt="icon download"
+            />
             Resume
           </a>
         </div>

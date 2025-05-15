@@ -1,3 +1,4 @@
+import { HighlightText } from "../../HighlightText/HighlightText";
 import styles from "./details.module.css";
 import { projectThemes } from "@/config/projectsThemes";
 
@@ -11,19 +12,6 @@ function DetailsModal({ handleClose, projectInfo }) {
     theme3: [2, 16],
   };
 
-  function highlightText(text, theme) {
-    const highlightChars = highlightMap[theme] || [];
-    return [...text].map((char, i) =>
-      highlightChars.includes(i) ? (
-        <span key={i} className={styles.accent}>
-          {char}
-        </span>
-      ) : (
-        <span key={i}>{char}</span>
-      )
-    );
-  }
-
   return (
     <section className={`${styles.sectionContainer} ${styles[themeClass]}`}>
       <div className={styles.infoContainer}>
@@ -33,9 +21,10 @@ function DetailsModal({ handleClose, projectInfo }) {
         <div className={styles.logoContainer}>
           <img src={projectInfo.logo} />
         </div>
-        <h2 className={styles.title}>
-          {highlightText(projectInfo.name, themeClass)}
-        </h2>
+        <HighlightText
+          text={projectInfo.name}
+          chars={highlightMap[themeClass]}
+        />
         <p className={styles.description}>{projectInfo.description}</p>
         <h3 className={styles.subtitle}>approach and tools</h3>
         <div className={styles.approachContainer}>

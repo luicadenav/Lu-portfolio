@@ -82,7 +82,11 @@ function Collaborative() {
               className={styles.imageWrapper}
               onClick={(e) => handleOpen(e, project)}
             >
-              <img src={project.src} alt="" className={styles.galleryImage} />
+              <img
+                src={project.src}
+                alt={project.name}
+                className={styles.galleryImage}
+              />
             </div>
           ))}
 

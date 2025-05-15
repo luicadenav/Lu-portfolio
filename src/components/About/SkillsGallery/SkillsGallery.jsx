@@ -46,7 +46,10 @@ export default function SkillsGallery({ hoveredId }) {
           const isHighlighted = highlightMap[hoveredId]?.includes(index);
           if (slide == "TEXT_PLACEHOLDER") {
             return (
-              <p className={`${styles.skillItem} ${styles.gridItem6}`}>
+              <p
+                key={index + slide.name}
+                className={`${styles.skillItem} ${styles.gridItem6}`}
+              >
                 &lt; what i <span className={styles.accent}> code </span>
                 with / &gt;
               </p>
@@ -55,7 +58,7 @@ export default function SkillsGallery({ hoveredId }) {
 
           return (
             <div
-              key={index + "slide"}
+              key={index + slide.name}
               data-tooltip-id={`tooltip-${index}`}
               className={`${styles.skillItem} ${styles[`gridItem${index}`]}`}
             >
@@ -73,7 +76,7 @@ export default function SkillsGallery({ hoveredId }) {
 
       {extendedIcons.map((item, index) => (
         <ReactTooltip
-          key={`tooltip-${index}`}
+          key={`tooltip-${index + item.name}`}
           id={`tooltip-${index}`}
           place="top"
           content={item.name}
