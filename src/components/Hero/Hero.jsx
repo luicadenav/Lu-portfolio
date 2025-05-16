@@ -2,6 +2,16 @@ import styles from "./hero.module.css";
 import download from "@/assets/icons/download.svg";
 import chat from "@/assets/icons/chat.svg";
 import AnimatedText from "./AnimatedText/AnimatedText";
+import { logEvent } from "./../../analytics";
+
+const handleDownload = () => {
+  logEvent("PDF", "download", "LuisaMariaCadena_Developer.pdf");
+  const url = "/assets/LuisaMariaCadena_Developer.pdf";
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "LuisaMariaCadena_Developer.pdf";
+  link.click();
+};
 
 function Hero() {
   return (
@@ -12,17 +22,17 @@ function Hero() {
         <AnimatedText />
         <div className={styles.buttonsContainer}>
           <a className={styles.sharedButton} href="">
-            <img className={styles.whatsappIcon} src={chat} alt="icon chat" />
+            <img className={styles.whatsappIcon} src={chat} alt="chat icon" />
             <span>let's talk</span>
           </a>
-          <a className={styles.sharedButton} href="">
+          <button onClick={handleDownload} className={styles.sharedButton}>
             <img
               className={styles.downloadIcon}
               src={download}
-              alt="icon download"
+              alt="download icon"
             />
             Resume
-          </a>
+          </button>
         </div>
       </div>
     </section>
