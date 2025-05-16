@@ -13,6 +13,8 @@ const handleDownload = () => {
   link.click();
 };
 
+const WHATSAPP_LINK = "https://w.app/lu_crea";
+
 function Hero() {
   return (
     <section id="hero" className={styles.heroSection}>
@@ -21,7 +23,12 @@ function Hero() {
         <h1 className={styles.title}>luisa cadena</h1>
         <AnimatedText />
         <div className={styles.buttonsContainer}>
-          <a className={styles.sharedButton} href="">
+          <a
+            className={styles.sharedButton}
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img className={styles.whatsappIcon} src={chat} alt="chat icon" />
             <span>let's talk</span>
           </a>
