@@ -27,6 +27,10 @@
   color: var(--color-white);
 }
 
+.connectText {
+  text-transform: uppercase;
+}
+
 .nameButton {
   margin-top: 0.5rem;
 }
