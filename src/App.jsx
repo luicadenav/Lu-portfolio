@@ -5,6 +5,7 @@ import More from "./components/More/More";
 import Navbar from "./components/Navbar/Navbar";
 import { initGA } from "./analytics";
 import { useEffect } from "react";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
       {/*       <Collaborative /> */}
       <About />
       <More />
+      <Footer />
     </>
   );
 }
