@@ -8,7 +8,17 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMenu = () => {
+    if (isActive) {
+      document.body.classList.remove("body-no-scroll");
+    } else {
+      document.body.classList.add("body-no-scroll");
+    }
     setIsActive(!isActive);
+  };
+
+  const handleClick = () => {
+    document.body.classList.remove("body-no-scroll");
+    setIsActive(false);
   };
 
   useEffect(() => {
@@ -29,16 +39,24 @@ function Navbar() {
         <img className={styles.logo} src={logo} alt="personal logo" />
         <ul className={`${styles.navList} ${isActive ? styles.isActive : ""}`}>
           <li className={styles.navLink}>
-            <a href="#hero">home</a>
+            <a onClick={handleClick} href="#hero">
+              home
+            </a>
           </li>
           <li className={styles.navLink}>
-            <a href="#about">about me</a>
+            <a onClick={handleClick} href="#about">
+              about me
+            </a>
           </li>
           <li className={styles.navLink}>
-            <a href="#projects">projects</a>
+            <a onClick={handleClick} href="#projects">
+              projects
+            </a>
           </li>
           <li className={styles.navLink}>
-            <a href="#contact">contact</a>
+            <a onClick={handleClick} href="#footer">
+              contact
+            </a>
           </li>
         </ul>
         <BurgerMenu toggleMenu={toggleMenu} isActive={isActive} />

@@ -6,7 +6,7 @@ import LuLogo from "@/assets/Lu_lodo.svg";
 
 function Footer() {
   return (
-    <section className={styles.sectionContainer}>
+    <section id="footer" className={styles.sectionContainer}>
       <div className={styles.footerContainer}>
         <div className={styles.socialButtons}>
           <div className={styles.socialGroup}>
