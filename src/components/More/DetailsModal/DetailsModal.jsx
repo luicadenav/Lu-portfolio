@@ -4,13 +4,7 @@ import { projectThemes } from "@/config/projectsThemes";
 
 function DetailsModal({ handleClose, projectInfo }) {
   const themeClass = projectThemes[projectInfo.id] || "";
-
-  const highlightMap = {
-    theme0: [2, 7, 11],
-    theme1: [0, 3],
-    theme2: [3, 5, 8],
-    theme3: [2, 16],
-  };
+  console.log("🚀 ~ DetailsModal ~ themeClass:", themeClass);
 
   return (
     <section className={`${styles.sectionContainer} ${styles[themeClass]}`}>
@@ -21,10 +15,7 @@ function DetailsModal({ handleClose, projectInfo }) {
         <div className={styles.logoContainer}>
           <img src={projectInfo.logo} />
         </div>
-        <HighlightText
-          text={projectInfo.name}
-          chars={highlightMap[themeClass]}
-        />
+        <HighlightText text={projectInfo.name} themeClass={themeClass} />
         <p className={styles.description}>{projectInfo.description}</p>
         <h3 className={styles.subtitle}>approach and tools</h3>
         <div className={styles.approachContainer}>

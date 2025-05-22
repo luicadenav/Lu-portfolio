@@ -11,6 +11,7 @@
   color: #ffaf2a;
 }
 
+.theme0 .accent,
 .theme3 .accent {
   color: var(--color-complement);
 }

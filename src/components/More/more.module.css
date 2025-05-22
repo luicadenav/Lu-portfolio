@@ -20,7 +20,7 @@
 
 .info {
   color: var(--color-white);
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   margin-bottom: 1rem;
 }
 

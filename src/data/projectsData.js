@@ -5,6 +5,8 @@ import paypotImg from "@/assets/images/paypot.png";
 import mui from "@/assets/icons/image_4.svg";
 import next from "@/assets/icons/image_5.svg";
 import react from "@/assets/icons/image_7.svg";
+import expo from "@/assets/icons/image_1.svg";
+import node from "@/assets/icons/image_6.svg";
 import tailwind from "@/assets/icons/image_8.svg";
 import typescript from "@/assets/icons/image_9.svg";
 import redux from "@/assets/icons/image_12.svg";
@@ -21,15 +23,15 @@ export const projects = [
     logo: logoDeep,
     name: "deep learning",
     description:
-      "A self-initiated project designed to deepen my knowledge of Material UI, TypeScript, and modern frontend patterns — all while having fun with the Rick & Morty API.",
+      "A self-initiated project designed to streamline course enrollment and allow users to view and manage their registered courses in a simple, intuitive interface.",
     stack: [
       { name: "react", src: react },
-      { name: "mui", src: mui },
-      { name: "TypeScript", src: typescript },
+      { name: "redux", src: redux },
+      { name: "tailwind", src: tailwind },
     ],
     approach: [
-      "Built a dynamic web app using React, TypeScript, and Material UI, styled for accessibility and responsive behavior.",
-      "Implemented user authentication with Firebase, managing sessions using sessionStorage and cookies, while integrating Redux for global state management and building a dynamic card store interface powered by the Rick and Morty API.",
+      "Developed a single-page application using React and Redux for managing user state and course data",
+      "Employed Tailwind CSS for building responsive and consistent UI components.",
     ],
     link: "",
   },
@@ -38,15 +40,17 @@ export const projects = [
     src: paypotImg,
     logo: logoPaypot,
     name: "paypot",
-    description: "Descripción del proyecto 1...",
+    description:
+      "An Mobile app to split expenses and manage shared debts with your friends, created as part of a course with Women Who Code",
     stack: [
       { name: "react", src: react },
-      { name: "mui", src: mui },
-      { name: "TypeScript", src: typescript },
+      { name: "expo", src: expo },
+      { name: "Node.js", src: node },
     ],
     approach: [
-      "Built a dynamic web app using Next.js, TypeScript, and Material UI, styled for accessibility and responsive behavior.",
-      "Implemented user authentication with Firebase, managing sessions using sessionStorage and cookies, while integrating Redux for global state management and building a dynamic card store interface powered by the Rick and Morty API.",
+      "Built with React Native and Expo Router for smooth mobile navigation.",
+      "Implemented backend services with Node.js, Express, and Passport for authentication, using JWT for secure session management.",
+      "Currently working on a responsive web version to extend usability beyond mobile.",
     ],
     link: "",
   },
@@ -74,7 +78,7 @@ export const projects = [
     id: 3,
     src: excaliburImg,
     logo: logoExcalibur,
-    name: "built in collaboration",
+    name: "Freelance Work",
     description:
       "As an independent frontend developer, I collaborated with Excalibur Interactive to design and build real products with real impact, combining design systems, modern frameworks, and clean architecture.",
     stack: [
@@ -85,9 +89,9 @@ export const projects = [
       { name: "TypeScript", src: typescript },
     ],
     approach: [
-      "Built a dynamic web app for United War Veterans Council with a strong focus on UX and responsiveness.",
-      "Developed an internal employee platform using Next.js, TypeScript, and Tailwind CSS.",
-      "Currently building a cross-platform mobile app with React Native (in progress).",
+      "Project 1: Built a dynamic web app for United War Veterans Council with a strong focus on UX and responsiveness.",
+      "Project 2: Developed an internal employee platform using Next.js, TypeScript, and Tailwind CSS.",
+      "Project 3: Ongoing development of a cross-platform mobile app using React Native",
     ],
     link: "",
   },
