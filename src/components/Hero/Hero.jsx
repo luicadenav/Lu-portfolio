@@ -13,7 +13,8 @@ const handleDownload = () => {
   link.click();
 };
 
-const WHATSAPP_LINK = "https://w.app/lu_crea";
+const WHATSAPP_LINK =
+  "https://wa.me/573022127272?text=Open%20to%20work%20and%20new%20challenges.%20Contact%20me!";
 
 function Hero() {
   return (
